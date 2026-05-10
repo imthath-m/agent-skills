@@ -52,7 +52,9 @@ You are tasked with resolving Issue #[NUMBER]: "[TITLE]".
 4. Create a commit.
 5. Push and create a Pull Request to `main`. Use `mcp_github-mcp-server_create_pull_request` if available.
 6. **IMPORTANT**: Include "Closes #[NUMBER]" in the PR description to link the issue.
-7. **STRICTLY PROHIBITED**: DO NOT MERGE the PR. The task ends immediately after PR creation. No agent is permitted to merge.
+7. **Cleanup**: Before returning, ensure all changes are either pushed or discarded. The worktree MUST be pristine with no uncommitted changes.
+8. **Remove Worktree**: Delete the worktree using `git worktree remove --force /tmp/kural-issue-[NUMBER]` before finishing.
+9. **STRICTLY PROHIBITED**: DO NOT MERGE the PR. The task ends immediately after PR creation and local cleanup.
 
 ## Safety
 Use a git worktree at /tmp/kural-issue-[NUMBER] to avoid filesystem collisions.
@@ -61,16 +63,18 @@ Use a git worktree at /tmp/kural-issue-[NUMBER] to avoid filesystem collisions.
 ### 5. Monitoring and Cleanup
 - Track sub-agent results.
 - Ensure PRs are created and issues are linked.
-- **NEVER** merge PRs autonomously. The workflow stops at PR creation. Merging is strictly reserved for humans. Any agent (orchestrator or sub-agent) attempting to merge is in violation of this skill.
+- **NEVER** merge PRs autonomously. The workflow stops at PR creation. Merging is strictly reserved for humans.
 - Confirm that implementations match the architectural direction defined in the LLD.
+- **Orchestrator Verification**: Once the flow is almost complete with the subagents, the orchestrator MUST verify that there are no uncommitted changes in the local main repository and no stale worktrees remain. All sub-agent changes must be in the PRs, with zero local footprint.
 
 ## Mandates
 
 - **Link Issues**: Every PR must contain the "Closes #123" keyword.
 - **Consult Design**: LLD and ADRs are the source of truth for implementation logic.
 - **Human in the Loop**: The orchestrator's job and the sub-agent's job end at PR creation. Merging is reserved EXCLUSIVELY for humans. No agent should ever call a merge tool or command.
-- **Strict Parallelism**: Sub-agents MUST be triggered in parallel as much as possible. Sequential execution is a failure of the orchestration role.
-- **Isolated Workspaces**: Always use `git worktree` for parallel sub-agents to prevent state corruption.
+- **Strict Parallelism**: Sub-agents MUST be triggered in parallel as much as possible.
+- **Isolated Workspaces**: Always use `git worktree` for parallel sub-agents.
+- **Pristine Local State**: Each sub-agent must delete its worktree after pushing. Before returning control to the user, the main orchestrator MUST ensure no local changes exist in any worktree or the main repository.
 
 ## Tooling Preference
 
