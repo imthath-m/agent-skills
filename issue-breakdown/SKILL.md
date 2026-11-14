@@ -1,13 +1,15 @@
 ---
-name: to-issues
-description: Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices. Use when user wants to convert a plan into issues, create implementation tickets, or break down work into issues.
+name: issue-breakdown
+description: Break a plan, spec, PRD or migration plan into independently-grabbable tickets on the project's issue tracker (GitHub, Linear, Jira) as thin vertical slices with dependencies. Use when the user wants to turn a plan into issues or tickets, create implementation tickets, or split work into a dependency-ordered backlog. Not for triaging, summarising or fixing a single existing issue.
 ---
 
-# To Issues
+# Issue Breakdown
 
 Break a plan into independently-grabbable issues using vertical slices (tracer bullets).
 
-The issue tracker and triage label vocabulary should have been provided to you — run `/setup-matt-pocock-skills` if not.
+> **Attribution**: adapted from the `to-issues` skill by Matt Pocock (https://github.com/mattpocock/skills). The process, slice rules and issue template are his work. Changes here: the inline-artifact review option in step 4, the Mermaid issue graph in step 6, and removal of the dependency on his setup command.
+
+The issue tracker and triage label vocabulary should already be in context. If they are not, ask the user which tracker to publish to and which label marks an issue as ready for AFK agents.
 
 ## Process
 

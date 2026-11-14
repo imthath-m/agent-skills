@@ -1,0 +1,20 @@
+{"id": "manage-tasks-with-subagents-01", "prompt": "Pick up all the unblocked AFK issues and work on them in parallel with sub-agents.", "should_trigger": true, "note": "Direct parallel delegation of AFK issues"}
+{"id": "manage-tasks-with-subagents-02", "prompt": "go work the AFK backlog", "should_trigger": true, "note": "Terse backlog execution"}
+{"id": "manage-tasks-with-subagents-03", "prompt": "There are about six open issues labelled AFK with no blockers. Spin up sub-agents to implement them concurrently, each opening its own PR.", "should_trigger": true, "note": "Concurrent sub-agents for multiple issues"}
+{"id": "manage-tasks-with-subagents-04", "prompt": "Can you progress all the independent tasks on the tracker at the same time? Delegate each one to a subagent and follow the LLD.", "should_trigger": true, "note": "Parallel independent tasks via subagents"}
+{"id": "manage-tasks-with-subagents-05", "prompt": "Fan out the ready-to-go GitHub issues to parallel agents so we get PRs for all of them tonight.", "should_trigger": true, "note": "Fan out issues to parallel agents"}
+{"id": "manage-tasks-with-subagents-06", "prompt": "We just published the issues for the sync feature. Kick off implementation of everything that isn't blocked, in parallel.", "should_trigger": true, "note": "Kick off parallel implementation after issue publish"}
+{"id": "manage-tasks-with-subagents-07", "prompt": "Orchestrate implementation of issues #14, #15 and #16 simultaneously \u2014 they don't depend on each other.", "should_trigger": true, "note": "Explicit parallel orchestration of named issues"}
+{"id": "manage-tasks-with-subagents-08", "prompt": "Run the next wave of AFK issues: anything 'blocked by none' should go to a sub-agent now.", "should_trigger": true, "note": "Next wave of unblocked AFK issues"}
+{"id": "manage-tasks-with-subagents-09", "prompt": "I'm going to bed. Please delegate the open AFK tickets to sub-agents in one go and have each one raise a PR.", "should_trigger": true, "note": "Delegating AFK tickets in a batch"}
+{"id": "manage-tasks-with-subagents-10", "prompt": "Use subagents to work through the unblocked issues concurrently rather than one by one.", "should_trigger": true, "note": "Concurrent vs sequential subagent execution"}
+{"id": "manage-tasks-with-subagents-11", "prompt": "Implement issue #23: add a dark mode toggle to the settings screen.", "should_trigger": false, "note": "Near miss: implementing a single issue"}
+{"id": "manage-tasks-with-subagents-12", "prompt": "Break this plan into GitHub issues with AFK/HITL labels.", "should_trigger": false, "note": "Near miss: creating issues from a plan"}
+{"id": "manage-tasks-with-subagents-13", "prompt": "Merge all the open PRs that have passing CI.", "should_trigger": false, "note": "Near miss: merging PRs"}
+{"id": "manage-tasks-with-subagents-14", "prompt": "List the open issues with the AFK label.", "should_trigger": false, "note": "Near miss: listing issues only"}
+{"id": "manage-tasks-with-subagents-15", "prompt": "Which of our open issues are blocked, and by what?", "should_trigger": false, "note": "Near miss: dependency analysis only"}
+{"id": "manage-tasks-with-subagents-16", "prompt": "Review the PRs the sub-agents opened last night and leave comments.", "should_trigger": false, "note": "Near miss: reviewing PRs"}
+{"id": "manage-tasks-with-subagents-17", "prompt": "Write a low-level design for the sync feature before we start on issues.", "should_trigger": false, "note": "Near miss: LLD"}
+{"id": "manage-tasks-with-subagents-18", "prompt": "Explain how Python's asyncio runs tasks concurrently.", "should_trigger": false, "note": "Near miss: concurrency concept question"}
+{"id": "manage-tasks-with-subagents-19", "prompt": "Suggest a name for my golden retriever puppy.", "should_trigger": false, "note": "Unrelated"}
+{"id": "manage-tasks-with-subagents-20", "prompt": "Convert 5 miles to kilometres.", "should_trigger": false, "note": "Unrelated"}
