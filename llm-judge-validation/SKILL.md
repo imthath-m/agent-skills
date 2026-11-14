@@ -1,6 +1,6 @@
 ---
 name: llm-judge-validation
-description: Validates and calibrates an LLM judge (autograder) against human labels and decides whether it is trustworthy. Use when measuring judge-human agreement, checking a judge before relying on it, or re-validating after a judge prompt, model, or parameter change.
+description: Validates and calibrates an LLM judge (autograder, eval scorer) against human labels and decides whether it is trustworthy. Use when measuring judge-human agreement, checking a judge before relying on it, re-validating after a judge prompt, model or parameter change, or setting up drift checks against human labels. Not for writing a judge prompt, human-only annotator agreement, or building the eval set.
 ---
 
 # LLM Judge Validation

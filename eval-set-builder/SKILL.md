@@ -1,6 +1,6 @@
 ---
 name: eval-set-builder
-description: Builds a curated evaluation (golden, test, regression) set for an LLM feature or agent from real transcripts, logs, traces or support tickets, including turning logged failures into cases and splitting dev/held-out. Use when asked to build, curate, extend or audit such a set from real usage data.
+description: Builds a curated evaluation (golden, test, regression) set for an LLM feature or agent from real transcripts, logs, traces or support tickets, including turning logged failures into cases and splitting dev/held-out. Use when asked to build, curate, extend or audit such a set from real usage data. Not for fine-tuning datasets, purely synthetic data, or validating an LLM judge.
 ---
 
 # Eval Set Builder

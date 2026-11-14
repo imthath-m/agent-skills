@@ -1,6 +1,6 @@
 ---
 name: manage-tasks-with-subagents
-description: Orchestrate parallel feature implementation by simultaneously delegating non-blocking GitHub issues with the 'AFK' label to sub-agents in a single turn. Use when you need to progress multiple independent tasks concurrently.
+description: Orchestrate parallel implementation of multiple unblocked GitHub issues labelled 'AFK' by delegating each to its own sub-agent in a single turn, in isolated worktrees, stopping at PR creation. Use when the user wants several independent issues progressed concurrently. Not for implementing a single issue, breaking a plan into issues, or merging PRs.
 ---
 
 # Manage Tasks with Sub-agents

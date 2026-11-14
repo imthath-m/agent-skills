@@ -1,6 +1,6 @@
 ---
 name: issue-breakdown
-description: Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices. Use when user wants to convert a plan into issues, create implementation tickets, or break down work into issues.
+description: Break a plan, spec, PRD or migration plan into independently-grabbable tickets on the project's issue tracker (GitHub, Linear, Jira) as thin vertical slices with dependencies. Use when the user wants to turn a plan into issues or tickets, create implementation tickets, or split work into a dependency-ordered backlog. Not for triaging, summarising or fixing a single existing issue.
 ---
 
 # Issue Breakdown

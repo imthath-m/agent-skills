@@ -1,6 +1,6 @@
 ---
 name: low-level-design
-description: Generates a highly modular Low-Level Design (LLD) document from product requirements. Use when the user asks to create an architecture blueprint, design software packages, define APIs, or structure a codebase.
+description: Write a Low-Level Design (LLD) document from a PRD or product requirements, covering decoupled packages, a shared domain layer, an orchestrator, platform packages and public APIs. Use when the user asks for an LLD, an architecture blueprint, a modular package or module structure, or API design for a feature or codebase. Not for system-design interview questions, PR reviews or single-function refactors.
 ---
 
 # Low-Level Design (LLD) Generator
